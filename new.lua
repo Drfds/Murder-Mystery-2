@@ -3,7 +3,7 @@ local Window = Library.CreateLib("TITLE", "DarkTheme")
 local Tab = Window:NewTab("TabName")
 local Section = Tab:NewSection("Section Name")
 
-Section:NewButton("ButtonText", "ButtonInfo", function()
+Section:NewButton("ESP", "", function()
 while wait() do
      pcall(function()
        for i,v in pairs(game.Players:GetChildren()) do
