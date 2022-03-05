@@ -4,7 +4,13 @@ local Tab = Window:NewTab("TabName")
 local Section = Tab:NewSection("Section Name")
 
 Section:NewButton("ButtonText", "ButtonInfo", function()
-    while wait() do
+-- CREDIT | SHARK X EDIT | https://www.youtube.com/channel/UCX--xBqSg1IdzLkaqmLTorA
+-- CREDIT | SHARK X EDIT | https://www.youtube.com/channel/UCX--xBqSg1IdzLkaqmLTorA
+-- CREDIT | SHARK X EDIT | https://www.youtube.com/channel/UCX--xBqSg1IdzLkaqmLTorA
+-- CREDIT | SHARK X EDIT | https://www.youtube.com/channel/UCX--xBqSg1IdzLkaqmLTorA
+
+
+while wait() do
      pcall(function()
        for i,v in pairs(game.Players:GetChildren()) do
             if not v.Character.Head:FindFirstChild("ESP") then
@@ -16,12 +22,12 @@ Section:NewButton("ButtonText", "ButtonInfo", function()
                 BillboardGui.Name = "ESP"
                 BillboardGui.AlwaysOnTop = true
                 BillboardGui.LightInfluence = 1.000
-                BillboardGui.Size = UDim2.new(0, 100, 0, 50)
+                BillboardGui.Size = UDim2.new(0, 200, 0, 50)
                 BillboardGui.StudsOffset = Vector3.new(0, 2.5, 0)
                 TextLabel.Parent = BillboardGui
                 TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
                 TextLabel.BackgroundTransparency = 1.000
-                TextLabel.Size = UDim2.new(0, 100, 0, 50)
+                TextLabel.Size = UDim2.new(0, 200, 0, 50)
                 TextLabel.Font = Enum.Font.GothamBold
                 TextLabel.Text = v.Name
                 TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
@@ -29,4 +35,8 @@ Section:NewButton("ButtonText", "ButtonInfo", function()
                 TextLabel.TextSize = 14.000
                 TextLabel.TextStrokeTransparency = 0.000
                 TextLabel.TextWrapped = true
+            end
+        end
+    end) 
+end
 end)
