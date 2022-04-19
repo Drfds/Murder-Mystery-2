@@ -1,11 +1,3 @@
-local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
-local Window = Library.CreateLib("TITLE", "DarkTheme")
-local Tab = Window:NewTab("TabName")
-local Section = Tab:NewSection("Section Name")
-
-Section:NewButton("ESP", "", function()
-while wait() do
-     pcall(function()
        for i,v in pairs(game.Players:GetChildren()) do
             if not v.Character.Head:FindFirstChild("ESP") then
                 local BillboardGui = Instance.new("BillboardGui")
@@ -31,6 +23,3 @@ while wait() do
                 TextLabel.TextWrapped = true
             end
         end
-    end) 
-end
-end)
